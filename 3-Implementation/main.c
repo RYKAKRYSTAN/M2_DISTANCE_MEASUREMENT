@@ -17,7 +17,7 @@
 
 #include"distance.h"
 #define  Trigger_pin	PD0	/* Trigger pin */
-
+#define BAUD_RATE_230400_BPS  2 // 230.4kps
 
 int TimerOverflow = 0;
 
@@ -31,7 +31,11 @@ ISR (TIMER1_OVF_vect)
 
 int main(void)
 {
-	
+
+
+
+   
+ 	
 	char string[10];
 	long count;
 	double distance;
@@ -78,5 +82,27 @@ int main(void)
 		LCD_String_xy(2, 0, "Dist = ");
 		LCD_String_xy(2, 7, string);	/* Print distance on LDC16x2 */
 		_delay_ms(200);
+		 int i = 0;
+    unsigned int ubrr = BAUD_RATE_230400_BPS;
+    unsigned char data[] = "Distance in cm  ";
+ 
+    /* Set Baudrate  */
+    UBRR0H = (ubrr>>8);
+    UBRR0L = (ubrr);
+ 
+    UCSR0C = 0x06;       /* Set frame format: 8data, 1stop bit  */
+    UCSR0B = (1<<TXEN0); /* Enable  transmitter                 */
+ 
+    while(1) /* Loop the messsage continously */
+    { 
+        i = 0;
+        while(data[i] != 0) /* print the String  "Hello from ATmega328p" */
+        {
+          while (!( UCSR0A & (1<<UDRE0))); /* Wait for empty transmit buffer*/
+          UDR0 = data[i];            /* Put data into buffer, sends the data */
+          i++;                             /* increment counter           */
+        }
+      }
+
 	}
 }
