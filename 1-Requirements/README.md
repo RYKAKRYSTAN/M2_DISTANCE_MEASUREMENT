@@ -15,20 +15,8 @@ In this project, the Ultrasounic sensor uses a technique called “ECHO” which
 - **EEPROM              :** 1 KB (ATmega328)
 
 ## SWOT Analysis
-### Strength
-- Distance of the objects can be calculated without error
-- Can locate the object
-- Low cost and efficient solution
+![swot](https://user-images.githubusercontent.com/101057218/164680540-1808dd1b-794e-4fbe-a098-5945b3d87587.jpg)
 
-### Weakness
-- Its only applicable for the solid objects.
-
-### Opportunities
-- We can use humidity sensors in future to measure distance in different environment
-- This system can be used in driverless car to detect obstacle
-
-### Threats
-- Any acoustic noise at the frequency to which the ultrasonic sensor is receptive, may interfere with that sensor's output
 
 ## 4W's and 1H
 ## Who :
