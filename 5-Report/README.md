@@ -1,10 +1,10 @@
-
-***ABSTRACT***<br/>
+# Distance Measurement  
+## ABSTRACT<br/>
             This project uses an ultrasonic senor(Hd44780) to measure distance with ATmega 328 microcontroller.The sensor works in such a way that the sensor sends an ultrasonic 
           pulse if any object is being sensed the pulse bounces back to the sensor.Ultrasonic sensors are a great solution for the detection of clear objects.  For liquid level 
           measurement, applications that use infrared sensors, for instance, struggle with this particular use case because of target translucence. 
           
-# Distance Measurement using ATmega328 
+
 ## Introduction
 Distance measurement using HC-SR04 and ATMEGA328p. In this project I have measured distance in centimetres, with the help of HC-SR04 Ultrasounic sensor, ATMEGA328 microcontroller, LCD Display via USART 
 
@@ -60,5 +60,8 @@ It is Activated by generating a acoustic piuse
 ![BHD1](https://user-images.githubusercontent.com/101564345/164682490-de7c0284-b717-4418-980e-e6a50a174e21.png)
 ## Structural diagram
 ![structural](https://user-images.githubusercontent.com/101564345/164683247-efe6f22d-f416-45dc-9395-af6a7f82b68b.jpg)
+## Simulation
+![Screenshot (208)](https://user-images.githubusercontent.com/101564345/164703299-88a3a510-a05e-43a0-8dd7-e57e5a3b2dd8.png)
+
 
 
