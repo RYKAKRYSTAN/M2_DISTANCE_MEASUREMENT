@@ -1,1 +1,64 @@
 
+# Distance Measurement using ATmega328 
+## Introduction
+Distance measurement using HC-SR04 and ATMEGA328p. In this project I have measured distance in centimetres, with the help of HC-SR04 Ultrasounic sensor, ATMEGA328 microcontroller, LCD Display via USART 
+
+## Research
+In this project, the Ultrasounic sensor uses a technique called “ECHO” which is something you get when sound reflects back after striking with a surface. We know that sound vibrations can not penetrate through solids. So what happens is, when a source of sound generates vibrations they travel through air at a speed of 220 meters per second. These vibrations when they meet our ear we describe them as sound. As said earlier these vibrations can not go through solid, so when they strike with a surface like wall, they are reflected back at the same speed to the source, which is called echo. Ultrasonic sensor “HC-SR04” provides an output signal proportional to distance based on the echo. The sensor here generates a sound vibration in ultrasonic range upon giving a trigger, after that it waits for the sound vibration to return. Now based on the parameters, sound speed (220m/s) and time taken for the echo to reach the source, it provides output pulse proportional to distance.
+
+## Features
+- **Microcontroller     :** ATmega328
+- **Operating Voltage   :** 5V
+- **Program Memory Type :** Flash
+- **Flash Memory        :** 32Kbytes
+- **SRAM                :** 2 KB (ATmega328)
+- **EEPROM              :** 1 KB (ATmega328)
+
+## SWOT Analysis
+### Strength
+- Distance of the objects can be calculated without error
+- Can locate the object
+- Low cost and efficient solution
+
+### Weakness
+- Its only applicable for the solid objects.
+
+### Opportunities
+- We can use humidity sensors in future to measure distance in different environment
+- This system can be used in driverless car to detect obstacle
+
+### Threats
+- Any acoustic noise at the frequency to which the ultrasonic sensor is receptive, may interfere with that sensor's output
+
+## 4W's and 1H
+## Who :
+Any layman without the knowledge of embedded system.
+
+## What :
+Distance measurement of objects with the help of HC-SR04 Ultrasounic sensor, ATMEGA328 microcontroller, LCD Display via USART
+
+## When :
+To detect or locate  a distabt object
+
+## Where :
+It can be used by industries where distance measurement plays a vital role.
+
+## How :
+It is Activated by generating a acoustic piuse
+## Detail Requirements
+## High Level Requirements
+|ID  |Description      |Status     |
+|----|-----------------|-----------|
+|HLR1|Microcontroller  |Implemented|
+|HLR2|Ultrasonic Sensor|Implemented|
+|HLR3|Display          |Implemented|
+|HLR4|Software         |Implemented|
+
+## Low Level Requirements
+|ID       |Description                             |Status     |
+|---------|----------------------------------------|-----------|
+|HLR1_LLR1|ATmega328                               |Implemented|
+|HLR2_LLR1|HC-SR04                                 |Implemented|
+|HLR3_LLR1|LCD Display                             |Implemented|
+|HLR4_LLR1|Visual Studio Code with AVR GCC compiler|Implemented|
+|HLR4_LLR2|SimulIDE                                |Implemented|
