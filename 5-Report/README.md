@@ -60,6 +60,16 @@ It is Activated by generating a acoustic piuse
 ![BHD1](https://user-images.githubusercontent.com/101564345/164682490-de7c0284-b717-4418-980e-e6a50a174e21.png)
 ## Structural diagram
 ![structural](https://user-images.githubusercontent.com/101564345/164683247-efe6f22d-f416-45dc-9395-af6a7f82b68b.jpg)
+
+
+##  Test plan
+| ID | Description| Expected input |Expected output|Actual output|Type of test|
+|--|--|--|--|--|--|
+| HR_01|LCD_Iniit | provides direction of command port | LCD is on|LCD is activated|scenario based|
+| HR_02 | LCD_String |Provides the message to be printed on LCD | Prints the expected message |Message is seen on LCD|Boundary based|
+| HR_03 | LCD_clear | Reset | Clears the LCD screen| No message is printed|Requirement based|
+
+
 ## Simulation
 ![Screenshot (208)](https://user-images.githubusercontent.com/101564345/164703299-88a3a510-a05e-43a0-8dd7-e57e5a3b2dd8.png)
 
