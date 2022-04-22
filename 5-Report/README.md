@@ -58,4 +58,7 @@ It is Activated by generating a acoustic piuse
 
 ## Behavioural diagram
 ![BHD1](https://user-images.githubusercontent.com/101564345/164682490-de7c0284-b717-4418-980e-e6a50a174e21.png)
+## Structural diagram
+![structural](https://user-images.githubusercontent.com/101564345/164683247-efe6f22d-f416-45dc-9395-af6a7f82b68b.jpg)
+
 
